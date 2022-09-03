@@ -957,12 +957,11 @@ printBtn.addEventListener("click", () => {
   pdfShow.style.display = "block";
   window.print();
 });
-window.onbeforeprint = function () {
+window.onafterprint = function () {
   setTimeout(function () {
     pdfShow.style.display = "none";
-  }, 1000);
+  }, 0);
 };
-
   </script>
 </body>
 
