@@ -957,8 +957,29 @@ printBtn.addEventListener("click", () => {
   pdfShow.style.display = "block";
   window.print();
   setTimeout(function () {
-   pdfShow.style.display = "none";
-  }, 100);
+        var beforePrint = function() {
+        console.log('Functionality to run before printing.');
+         pdfShow.style.display = "none";
+    };
+
+    var afterPrint = function() {
+        console.log('Functionality to run after printing');
+    };
+
+    if (window.matchMedia) {
+        var mediaQueryList = window.matchMedia('print');
+        mediaQueryList.addListener(function(mql) {
+            if (mql.matches) {
+                beforePrint();
+            } else {
+                afterPrint();
+            }
+        });
+    }
+
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
+  },0);
 });
   </script>
 </body>
