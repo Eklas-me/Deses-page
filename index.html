@@ -955,11 +955,13 @@ let printBtn = document.getElementById("printBtn");
 
 printBtn.addEventListener("click", () => {
   pdfShow.style.display = "block";
-  window.print();
+
   setTimeout(function () {
     pdfShow.style.display = "none";
   }, 0);
+  return window.print();
 });
+
   </script>
 </body>
 
