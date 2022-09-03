@@ -950,37 +950,19 @@
     id="twenty-twenty-one-responsive-embeds-script-js"></script>
   <script> 	/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", (function () { var t, e = location.hash.substring(1); /^[A-z0-9-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }), !1); 	</script>
   <script>
-    let pdfShow = document.getElementById("pdfShow");
+let pdfShow = document.getElementById("pdfShow");
 let printBtn = document.getElementById("printBtn");
 
 printBtn.addEventListener("click", () => {
   pdfShow.style.display = "block";
   window.print();
-  setTimeout(function () {
-        var beforePrint = function() {
-        console.log('Functionality to run before printing.');
-         pdfShow.style.display = "none";
-    };
-
-    var afterPrint = function() {
-        console.log('Functionality to run after printing');
-    };
-
-    if (window.matchMedia) {
-        var mediaQueryList = window.matchMedia('print');
-        mediaQueryList.addListener(function(mql) {
-            if (mql.matches) {
-                beforePrint();
-            } else {
-                afterPrint();
-            }
-        });
-    }
-
-    window.onbeforeprint = beforePrint;
-    window.onafterprint = afterPrint;
-  },0);
 });
+window.onbeforeprint = function () {
+  setTimeout(function () {
+    pdfShow.style.display = "none";
+  }, 100);
+};
+
   </script>
 </body>
 
