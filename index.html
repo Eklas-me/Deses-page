@@ -1,6 +1,7 @@
 <html lang="en-US" style="font-family: SolaimanLipi;">
 
 <head>
+<head>
   <meta charset="UTF-8">
   <title>সুরক্ষা : কোভিড-১৯ ভ্যাকসিনের জন্য নিবন্ধন করুন</title>
   <meta name="robots" content="noindex, nofollow">
@@ -28,10 +29,26 @@
     }
 
     #pdfShow {
-      display: none;
+      visibility: hidden;
+      position:absolute;
+      top:0;
+      left:0;
     }
+    @media print {
+  body * {
+    visibility: hidden;
+  }
+  #pdfShow, #pdfShow * {
+    visibility: visible;
+  }
+  #pdfShow {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
 
-    .surokkha{
+  .surokkha{
       /* background-image: url("https://play-lh.googleusercontent.com/T4lbDfq91wNFLbTB_YaCafqJN1ucdBocu0BeEKSU1Gbn9Kkq9B-4AwMDiZRIMOOuawI"); */
    
       background: linear-gradient(  rgba(255, 255, 255, 0.90),  rgba(255, 255, 255, 0.90) ),
@@ -99,7 +116,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700:900&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="https://surokkha-gov-bd.net/frontend/verification_new/assets/css/style.css">
@@ -193,7 +210,7 @@
                 <div class="row m-0 no-print">
                   <div class="col-md-5 col-print-sm p-0">
                     <div class="text-center p-2"
-                      style="                           text-align: center;                           background-color: rgb(238, 238, 238);                           font-size: 14px;                           font-weight: bold;                           border: 1px solid rgb(222, 226, 230);                         ">
+                      style=" text-align: center; background-color: rgb(238, 238, 238); font-size: 14px;                           font-weight: bold; border: 1px solid rgb(222, 226, 230);                         ">
                       Beneficiary Details (টিকা গ্রহণকারীর বিবরণ) </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
@@ -481,106 +498,106 @@
                    <span style="font-weight:normal; font-size: 14px;"> (কোভিড-১৯ ভ্যাকসিন গ্রহণের সার্টিফিকেট)</span>
                   </div>
                   <div class="col-md-5 col-print-sm p-0">
-                    <div class="text-center p-2"
+                    <div class="text-center p-1"
                       style=" text-align: center; font-family: 'Roboto', sans-serif;  font-style: large; background-color: rgb(238, 238, 238); font-size: 14px; font-weight: bold;  border: 1px solid rgb(222, 226, 230); ">
                       Beneficiary Details (টিকা গ্রহণকারীর বিবরণ) </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="  font-size: 13px; text-align: right;   padding: 5px;  overflow-wrap: break-word;                             ">
+                          style="  font-size: 13px; text-align: right;   padding: 4px;  overflow-wrap: break-word;                             ">
                           Certificate No:<br>সার্টিফিকেট নং- </div>
                       </div>
-                      <div class="col-6" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
-                          style=" font-size: 13px;text-align: left; padding: 5px; overflow-wrap: break-word;                             ">
+                      <div class="col-6" style="border: 1px dashed rgb(222, 226, 230);">
+                        <div class="cert-verify-content-div pt-3"
+                          style=" font-size: 13px;text-align: left;   overflow-wrap: break-word;">
                           BD598152704284 </div>
                       </div>
                     </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="font-size: 13px;text-align: right; padding: 5px;overflow-wrap: break-word;">
+                          style="font-size: 13px;text-align: right; padding: 4px;overflow-wrap: break-word;">
                           NID Number:<br>জাতীয় পরিচয়পত্র নং- </div>
                       </div>
                       <div class="col-6" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
-                          style=" font-size: 13px;text-align: left; padding: 5px;overflow-wrap: break-word;                             ">
+                        <div class="cert-verify-content-div pt-3"
+                          style=" font-size: 13px;text-align: left; padding: 4px;overflow-wrap: break-word;                             ">
                           4662361734 </div>
                       </div>
                     </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px; text-align: right; padding: 5px; overflow-wrap: break-word; ">
+                          style=" font-size: 13px; text-align: right; padding: 4px; overflow-wrap: break-word; ">
                           Passport No:<br>পাসপোর্ট নং- </div>
                       </div>
                       <div class="col-6" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
-                          style=" font-size: 13px; text-align: left;  padding: 5px;overflow-wrap: break-word; ">
+                        <div class="cert-verify-content-div pt-3"
+                          style=" font-size: 13px; text-align: left;  padding: 4px;overflow-wrap: break-word; ">
                           BR0647128 </div>
                       </div>
                     </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px; text-align: right; padding: 5px; overflow-wrap: break-word; ">
+                          style=" font-size: 13px; text-align: right; padding: 4px; overflow-wrap: break-word; ">
                           Nationality:<br>জাতীয়তাঃ </div>
                       </div>
                       <div class="col-6" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
-                          style="  font-size: 13px; text-align: left; padding: 5px; overflow-wrap: break-word;">
+                        <div class="cert-verify-content-div pt-3"
+                          style="  font-size: 13px; text-align: left; padding: 4px; overflow-wrap: break-word;">
                           Bangladeshi </div>
                       </div>
                     </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px;text-align: right;  padding: 5px; overflow-wrap: break-word;">
+                          style=" font-size: 13px;text-align: right;  padding: 4px; overflow-wrap: break-word;">
                           Name:<br>নামঃ </div>
                       </div>
                       <div class="col-6" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
-                          style=" font-size: 12px; text-align: left; padding: 5px;overflow-wrap: break-word;text-transform: uppercase;">
+                        <div class="cert-verify-content-div pt-3"
+                          style=" font-size: 12px; text-align: left; padding: 4px;overflow-wrap: break-word;text-transform: uppercase;">
                           MD. SAGOR DHALI</div>
                       </div>
                     </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px;text-align: right;  padding: 5px;overflow-wrap: break-word;">
+                          style=" font-size: 13px;text-align: right;  padding: 4px;overflow-wrap: break-word;">
                           Date of Birth:<br>জন্ম তারিখঃ </div>
                       </div>
                       <div class="col-6" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
-                          style="  font-size: 13px;text-align: left; padding: 5px; overflow-wrap: break-word;">
+                        <div class="cert-verify-content-div pt-3"
+                          style="  font-size: 13px;text-align: left; padding: 4px; overflow-wrap: break-word;">
                           22-04-2000 </div>
                       </div>
                     </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="  font-size: 13px; text-align: right; padding: 5px;overflow-wrap: break-word; ">
+                          style="  font-size: 13px; text-align: right; padding: 4px;overflow-wrap: break-word; ">
                           Gender:<br>লিঙ্গঃ </div>
                       </div>
                       <div class="col-6" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
-                          style="font-size: 13px;text-align: left; padding: 5px; text-transform: capitalize;">
+                        <div class="cert-verify-content-div pt-3"
+                          style="font-size: 13px;text-align: left; padding: 4px; text-transform: capitalize;">
                           Male </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-7 col-print-md p-0">
-                    <div class="text-center p-2"
-                      style="  text-align: center; font-family: 'Roboto', sans-serif;  background-color: rgb(238, 238, 238); font-size: 14px; font-weight: bold; border: 1px solid rgb(222, 226, 230); ">
+                    <div class="text-center p-1"
+                      style="  text-align: center; font-family: 'Roboto', sans-serif;  background-color: rgb(238, 238, 238); font-size: 14px; font-weight: 700; border: 1px solid rgb(222, 226, 230); ">
                       Vaccination Details (টিকা প্রদানের বিবরণ) </div>
                     <div class="row m-0">
                       <div class="col-7 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="font-size: 13px;text-align: right; padding: 5px;overflow-wrap: break-word; ">
+                          style="font-size: 13px;text-align: right; padding: 4px;overflow-wrap: break-word; ">
                           Date of Vaccination (Dose 1):<br>টিকা প্রদানের তারিখ (ডোজ ১): </div>
                       </div>
                       <div class="col-5" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
+                        <div class="cert-verify-content-div pt-3"
                           style=" font-size: 13px;text-align: left;   overflow-wrap: break-word; ">
                           31-10-2021 </div>
                       </div>
@@ -588,11 +605,11 @@
                     <div class="row m-0">
                       <div class="col-7 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px;text-align: right; padding: 5px;overflow-wrap: break-word;">
+                          style=" font-size: 13px;text-align: right; padding: 4px;overflow-wrap: break-word;">
                           Name of Vaccine (Dose 1):<br>টিকার নাম (ডোজ ১): </div>
                       </div>
                       <div class="col-5" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
+                        <div class="cert-verify-content-div pt-1"
                           style="font-size: 13px; text-align: left;  overflow-wrap: break-word;">
                           COVISHIELD <br>
                           (AstraZeneca)
@@ -602,11 +619,11 @@
                     <div class="row m-0">
                       <div class="col-7 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="font-size: 13px; text-align: right; padding: 5px;overflow-wrap: break-word;">
+                          style="font-size: 13px; text-align: right; padding: 4px;overflow-wrap: break-word;">
                           Date of Vaccination (Dose 2):<br>টিকা প্রদানের তারিখ (ডোজ ২): </div>
                       </div>
                       <div class="col-5" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
+                        <div class="cert-verify-content-div pt-3"
                           style=" font-size: 13px; text-align: left;   overflow-wrap: break-word; ">
                           28-12-2021 </div>
                       </div>
@@ -614,11 +631,11 @@
                     <div class="row m-0">
                       <div class="col-7 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px;text-align: right; padding: 5px;overflow-wrap: break-word; ">
+                          style=" font-size: 13px;text-align: right; padding: 4px;overflow-wrap: break-word; ">
                           Name of Vaccine (Dose 2):<br>টিকার নাম (ডোজ ২): </div>
                       </div>
                       <div class="col-5" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
+                        <div class="cert-verify-content-div pt-1"
                           style=" font-size: 13px;  overflow-wrap: break-word; ">
                           COVISHIELD <br>
                           (AstraZeneca)
@@ -628,33 +645,25 @@
                     <div class="row m-0">
                       <div class="col-7 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px; text-align: right; padding: 5px;padding-top: 31px; padding-bottom: 30px; overflow-wrap: break-word;">
+                          style=" font-size: 13px; text-align: right; padding: 5px;padding-top: 28px; padding-bottom: 28px; overflow-wrap: break-word;">
                           Vaccination Center:<br>টিকা প্রদানের কেন্দ্রঃ </div>
                       </div>
                       <div class="col-5" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 12px;text-align: left;  padding-top: 31px; padding-bottom: 30px;  overflow-wrap: break-word;">
+                          style=" font-size: 12px;text-align: left;  padding-top: 30px; padding-bottom: 30px;  overflow-wrap: break-word;">
                           Upazila Health Complex, <br>
                           Louhajang
                          </div>
                       </div>
                     </div>
-                    <!-- <div class="row m-0">
-                      <div class="col-6 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
-                        
-                      </div>
-                      <div class="col-6" style="border: 1px dashed rgb(222, 226, 230)">
-                        
-                      </div>
-                    </div> -->
                     <div class="row m-0">
                       <div class="col-7 col-p-50" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px; text-align: right;  padding: 5px; overflow-wrap: break-word;">
+                          style=" font-size: 13px; text-align: right;  padding: 4px; overflow-wrap: break-word;">
                           Vaccinated By:<br>টিকা প্রদানকারীঃ</div>
                       </div>
                       <div class="col-5" style="border: 1px dashed rgb(222, 226, 230)">
-                        <div class="cert-verify-content-div"
+                        <div class="cert-verify-content-div pt-1"
                           style=" font-size: 13px; text-align: left;  overflow-wrap: break-word;">
                           Directorate General of <br>
                           Health Services (DGHS)</div>
@@ -665,57 +674,65 @@
 
                 <!-- Other Doses Section Start -->
 
-                <div class="row m-0" >
+                <div class="row m-0" style="border :1px dashed rgb(222, 226, 230);">
                   <!-- <div class="col-md-12 col-print-md p-0"> -->
-                    <div class="text-center p-2 " 
-                      style="text-align: center; font-family: SolaimanLipi; background-color: rgb(238, 238, 238);font-size: 14px;font-weight: bold;border: 1px solid rgb(222, 226, 230);">
+                    <div class="col-3"></div>
+                    <div class="col-6 p-1 m-2" style="border: 1px solid rgb(222, 226, 230)">
+                      <div></div>
+                      <div class="text-center p-1 " 
+                      style="text-align: center; font-family: SolaimanLipi;font-size: 14px;font-weight: 700;border: 1px dashed rgb(222, 226, 230);">
                       Other Doses (অন্যান্য ডোজসমূহ) :
                     </div>
+                    
                     <div class="row m-0 p-0 "  >
-                      <div class="col-4 " style="border: 1px dashed rgb(222, 226, 230)">
+                      <div class="col-3 p-0" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="font-size: 13px; font-weight: bold; font-family: SolaimanLipi; text-align: center;padding: 5px;overflow-wrap: break-word;">
+                          style="font-size: 13px; font-weight: 900; font-family: SolaimanLipi; text-align: left;padding: 4px;overflow-wrap: break-word;">
                           Dose (ডোজ):</div>
                       </div>
-                      <div class="col-4" style="border: 1px dashed rgb(222, 226, 230)">
+                      <div class="col-6 p-0" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="font-size: 13px;font-weight: bold;  font-family: SolaimanLipi; text-align: center;padding: 5px; overflow-wrap: break-word;">
+                          style="font-size: 13px;font-weight: 900;  font-family: SolaimanLipi; text-align: left;padding: 4px; overflow-wrap: break-word;">
                           Vaccine Name (টিকার নাম):</div>
                       </div>
-                      <div class="col-4" style="border: 1px dashed rgb(222, 226, 230)">
+                      <div class="col-3 p-0" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px; font-weight: bold;  font-family: SolaimanLipi; text-align: center; padding: 5px; overflow-wrap: break-word;">
+                          style=" font-size: 12px; font-weight: 900;  font-family: SolaimanLipi; text-align: left; padding: 4px; overflow-wrap: break-word;">
                           Date (তারিখ) : </div>
                       </div>
                     </div>
+
                     <div class="row m-0 p-0" >
-                      <div class="col-4 " style="border: 1px dashed rgb(222, 226, 230)">
+                      <div class="col-3 p-0" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style=" font-size: 13px;text-align: center;font-family: SolaimanLipi; padding: 5px; overflow-wrap: break-word; ">
+                          style=" font-size: 14px;text-align: left;font-family: SolaimanLipi; padding: 4px; overflow-wrap: break-word; ">
                           Dose-3</div>
                       </div>
-                      <div class="col-4" style="border: 1px dashed rgb(222, 226, 230)">
+                      <div class="col-6 p-0" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="font-size: 13px; font-family: SolaimanLipi; text-align: center;padding: 5px; overflow-wrap: break-word; ">
-                          Pfizer (Pfizer-BioNTech) </div>
+                          style="font-size: 14px; font-family: SolaimanLipi; text-align: left;padding: 4px; overflow-wrap: break-word; ">
+                          Pfizer </div>
                       </div>
-                      <div class="col-4" style="border: 1px dashed rgb(222, 226, 230)">
+                      <div class="col-3 p-0" style="border: 1px dashed rgb(222, 226, 230)">
                         <div class="cert-verify-content-div"
-                          style="font-size: 13px; font-family: SolaimanLipi; text-align: center;  padding: 5px; overflow-wrap: break-word; ">
+                          style="font-size: 14px; font-family: SolaimanLipi; text-align: left;  padding: 4px; overflow-wrap: break-word; ">
                           13-7-2022</div>
                       </div>
                     </div>
+                    </div>
+                    <div class="col-3"></div>
                   <!-- </div> -->
                 </div>
 
                 <!-- Other Doses Section End -->
 
               </div>
-              <div class="p-2 " style=" text-align: center;  padding-top: 10px; border: 1px solid rgb(222, 226, 230); ">
-                To verify this certificate please visit www.surokkha.gov.bd/verify or scan the QR code. (এই সার্টিফিকেটটি যাচাই করার জন্য www.surokkha.gov.bd/verify ভিজিট করুন অথবা QR কোডটি স্ক্যান করুন।)
+              <div class="pt-4 px-2 " style=" text-align: center; font-size: 15px; padding-top: 10px; border: 1px solid rgb(222, 226, 230); ">
+                To verify this certificate please visit www.surokkha.gov.bd/verify or scan the QR code. <br> (এই সার্টিফিকেটটি যাচাই করার জন্য www.surokkha.gov.bd/verify ভিজিট করুন অথবা QR কোডটি স্ক্যান করুন।)
                </div>
-              <div class="p-2" style=" text-align: center;border: 1px solid rgb(222, 226, 230); ">
-                For any further assistance, please visit www.dghs.gov.bd or e-mail: info@dghs.gov.bd (প্রয়োজনে www.dghs.gov.bd ওয়েব সাইটে ভিজিট করুন অথবা ইমেইল করুনঃ info@dghs.gov.bd)
+              <div class="pt-2" style=" text-align: center;border: 1px solid rgb(222, 226, 230); ">
+                For any further assistance, please visit www.dghs.gov.bd or e-mail: info@dghs.gov.bd <br>
+                 (প্রয়োজনে www.dghs.gov.bd ওয়েব সাইটে ভিজিট করুন অথবা ইমেইল করুনঃ info@dghs.gov.bd)
                </div>
               <div class="text-center p-2"
                 style=" text-align: center; font-family: 'Roboto', sans-serif;  background-color: rgb(238, 238, 238); font-size: 14px;                     font-weight: bold; border: 1px solid rgb(222, 226, 230);">
@@ -729,70 +746,6 @@
         </div>
       </div>
 
-
-      <!-- <div class="row p-5">
-        <div class="col-md-6 col-sm-6 pb-4 mb-4" style="border: 1px solid #008219">
-          <div class="pdfDownLogo text-center">
-            <img src="https://surokkha-gov-bd.net/frontend/verification_new/assets/images/gov_logo.0b7f8514.png"
-              width="70">
-          </div>
-          <div class="pdfDowntext text-center">
-            <p >Government of the People's Republic of
-              Bangladesh
-              Ministry of Health and Family Welfare</p>
-            <h2 style="background-color: #008219; color: #fff;">COVID-19</h2>
-            <h3 style="background-color: #008219; color: #fff;">Vaccination Certificate
-              <br>
-              Certificate No: BD598152704284
-            </h3>
-            
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=Eklas">
-            <h1>MD. SAGOR DHALI</h1>
-          </div>
-          <table style="width:100%" >
-            <tr  style="border-bottom: 1px solid #fff;" >
-              <th style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">NID Number:</th>
-              <td style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">4662361734</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #fff;">
-              <th style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">Passport No:</th>
-              <td style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">BR0647128</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #fff;">
-              <th style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">Nationality:</th>
-              <td style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">Bangladeshi</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #fff;">
-              <th style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">Vaccine Name:</th>
-              <td style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">COVISHIELD (AstraZeneca)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #fff;">
-              <th style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">Total Doses:</th>
-              <td style="background-color: #008219;border-right: 5px solid #fff;padding: 5px; color: #fff;">3</td>
-            </tr>
-          </table>
-        </div>
-        <div class="col-md-6 mb-4 " style="border: 1px solid #008219">
-
-      <div style="padding-top: 10px; padding-bottom:10px; width: 100%; height: 20%;"></div>
-
-        <div class="pdfshowmid" style="border-top:2px solid #008219; border-bottom:2px solid #008219; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-          <p>To verify this certificate please
-            visit <a style="color: #000; font-weight: bold; " href="https://www.surokkha.gov.bd/verify">www.surokkha.gov.bd/verify</a></p>
-            <br>
-            <span>or</span>
-            <br>
-            <strong style="font-weight: bold;">scan the QR code.</strong>
-            <p>For any further assistance, please
-              visit www.dghs.gov.bd or
-              e-mail: info@dghs.gov.bd</p>
-        </div>
-
-          <div style="padding-top: 10px; padding-bottom:10px; width: 100%; height: 20%; text-align: center;">
-            <img src="https://surokkha-gov-bd.net/frontend/verification_new/assets/images/Credit_Logo.68be46aa.png" alt="ict logo" style="max-width: 80%">
-          </div>
-        </div>
-      </div> -->
 
 
 
@@ -811,19 +764,19 @@
                 width="70">
             </div>
             <div class="cert-verify-content-div"
-              style="font-size: 13px; font-weight: bold; font-family: SolaimanLipi; text-align: right;padding: 5px;overflow-wrap: break-word;">
+              style="font-size: 13px; font-family: SolaimanLipi; text-align: right;padding: 5px;overflow-wrap: break-word;">
               <div class="pdfDowntext text-center">
                 <p style="font-family: 'Roboto', sans-serif; font-weight: normal; font-size: 18px; ">Government of the People's Republic of <br>
                   Bangladesh <br>
                   Ministry of Health and Family Welfare</p>
-                <h2 style="background-color:#008219; color: #fff;font-weight: bold;font-family: 'Roboto', sans-serif; ">
-                  COVID-19
+                <h2 style="background-color:#008219; color: #fff;font-weight: 500; ">
+                  <span>COVID-19</span>
                   <br>
-                  <span style="font-weight: 400;">Vaccination Certificate</span>
+                  <span style="font-weight: 400; font-size: 25px;">Vaccination Certificate</span>
                 </h2>
-                <h6 style="font-family: 'Roboto', sans-serif; font-weight: 300;">
+                <p style=" margin-bottom: 5px;">
                   Certificate No: BD598152704284
-                </h6>
+                </p>
 
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.google.com">
                 <h1
@@ -906,6 +859,7 @@
 
 
     </div>
+    
   </main>
   <footer class="su-main-footer-area no-print">
     <div class="container mt-5">
@@ -949,19 +903,19 @@
   <script src="https://surokkha-govbd.info/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=5.9.2"
     id="twenty-twenty-one-responsive-embeds-script-js"></script>
   <script> 	/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", (function () { var t, e = location.hash.substring(1); /^[A-z0-9-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }), !1); 	</script>
+
   <script>
-let pdfShow = document.getElementById("pdfShow");
+        
+        let pdfShow = document.getElementById("pdfShow");
 let printBtn = document.getElementById("printBtn");
 
 printBtn.addEventListener("click", () => {
-  pdfShow.style.display = "block";
   window.print();
+  setTimeout(function () {}, 0);
 });
-window.onafterprint = function () {
-  setTimeout(function () {
-    pdfShow.style.display = "none";
-  }, 0);
-};
+
+        
+        
   </script>
 </body>
 
