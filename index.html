@@ -148,7 +148,7 @@
       }
 
       .cardWrapper {
-        width: 480;
+        width: 480px !important;
         border: 1px solid #008219;
         margin: auto;
       }
@@ -177,6 +177,9 @@
         margin: auto;
         margin-top: 6px;
       }
+      .vaccine-info tbody tr td {
+    text-align: left;
+}
 
       .surokkha {
         /* background-image: url("https://play-lh.googleusercontent.com/T4lbDfq91wNFLbTB_YaCafqJN1ucdBocu0BeEKSU1Gbn9Kkq9B-4AwMDiZRIMOOuawI"); */
@@ -188,6 +191,8 @@
         background-size: cover;
         background-position: center center;
         width: 100%;
+      background-position: center center;
+      background-size: 580px;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;th:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
       }
 
       @media print {
@@ -591,7 +596,7 @@
     <!----------------- Pdf Start----------------- -->
 
 
-    <div class="container" id="pdfShow" style="padding: 25px 19px 5px 19px;  overflow:hidden; ">
+    <div class="container" id="pdfShow" style="padding: 25px 25px 5px 25px;  overflow:hidden; ">
       <div class="row justify-content-center py-8 px-8 py-md-27 px-md-0">
         <div class="col-md-12 p-sm-0">
           <div class="d-flex justify-content-between">
@@ -609,7 +614,7 @@
                       alt="" width="70">
                   </div>
                   <div class="col-md-4 text-center">
-                    <p style="font-size: 13px; margin-top: 15px; margin-left: 40px;"> Government of the People's
+                    <p style="font-size: 12px; margin-top: 15px; margin-left: 40px;"> Government of the People's
                       Republic of Bangladesh <br>
                       Ministry of Health and Family Welfare</p>
 
@@ -630,14 +635,13 @@
 
                 <div class="row m-0 surokkha">
                   <div class="text-center "
-                    style="text-align: center;font-family: 'Roboto', sans-serif; font-size: 16px;font-weight: bold;border-top: 1px solid rgb(222, 226, 230);">
+                    style="text-align: center;font-family: 'Roboto', sans-serif; font-size: 16px;border-top: 1px solid rgb(222, 226, 230); line-height: 17px;">
                     <span style="font-weight: 700;">COVID-19 Vaccination Certificate</span> <br>
                     <span style=" font-family: initial; font-size: 14px;"> (কোভিড-১৯ ভ্যাকসিন গ্রহণের
                       সার্টিফিকেট)</span>
                   </div>
                   <div class="col-md-5 col-print-sm p-0">
-                    <div class="text-center "
-                      style=" text-align: center; padding-top: 5px; font-family: 'Roboto', sans-serif;  font-style: large; background-color: rgb(238, 238, 238); font-size: 14px; font-weight: bold;  border-top: 1px solid rgb(222, 226, 230); ">
+                    <div  style="padding-top: 3px; font-family: 'Roboto', sans-serif;  font-style: large; background-color: rgb(238, 238, 238); font-size: 11px !important; font-weight: bold;  border-top: 1px solid rgb(222, 226, 230); ">
                       Beneficiary Details (টিকা গ্রহণকারীর বিবরণ) </div>
                     <div class="row m-0">
                       <div class="col-6 col-p-50 dashed" style="padding-right:5px;">
@@ -725,8 +729,7 @@
                     </div>
                   </div>
                   <div class="col-md-7 col-print-md p-0">
-                    <div class="text-center "
-                      style="  text-align: center; padding-top: 5px; font-family: 'Roboto', sans-serif;  background-color: rgb(238, 238, 238); font-size: 14px; font-weight: 700; border-top: 1px solid rgb(222, 226, 230); ">
+                    <div style="   padding-top: 3px; font-family: 'Roboto', sans-serif;  background-color: rgb(238, 238, 238); font-size: 11px; font-weight: 700; border-top: 1px solid rgb(222, 226, 230); ">
                       Vaccination Details (টিকা প্রদানের বিবরণ) </div>
                     <div class="row m-0">
                       <div class="col-7 col-p-50 dashed" style="padding-right:5px;">
@@ -802,7 +805,7 @@
                       </div>
                       <div class="col-5 dashed3" style="padding-left:5px;">
                         <div class="cert-verify-content-div pt-1"
-                          style=" font-size: 13px; text-align: left;  overflow-wrap: break-word;">
+                          style=" font-size: 12px; text-align: left;  overflow-wrap: break-word;">
                           Directorate General of <br>
                           Health Services (DGHS)</div>
                       </div>
@@ -825,7 +828,7 @@
                         Dose (ডোজ):</div>
 
                       <div class="cert-verify-content-div dashed2"
-                        style="font-size: 10px;font-weight: 900;  font-family: SolaimanLipi; text-align: left;padding: 4px; overflow-wrap: break-word;width: 123px;;">
+                        style="font-size: 9px;font-weight: 900;  font-family: SolaimanLipi; text-align: left;padding: 4px; overflow-wrap: break-word;width: 123px;;">
                         Vaccine Name (টিকার নাম):</div>
 
                       <div class="cert-verify-content-div dashed2"
@@ -897,12 +900,12 @@
 
                   </div>
                   <p style=" margin-bottom: 3px; font-size: 11px;">
-                    Certificate No: <span style="font-weight: bold;">BD598152704284</span>
+                    Certificate No: <span style="font-weight: 500;">BD598152704284</span>
                   </p>
 
                   <img
                     src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=surokhha.com/gov.bd-verify-online?id-nmiwnjkymzk2m2myztbmmdzmownlmtm0otdhmdrjndjimdi5ytu3othlmddmzjmynwzlzgnjowjinwq4ywfmmuu9xj6hy4hqtyd5hhik2qhwypdrxkj_4g2gxjr8htxgw3xnk_v0q2mwom9g-">
-                  <h1 style="font-size: 12px; font-weight: 900; margin-top: 10px;margin-bottom: 0px;  font-weight:900;">
+                  <h1 style="font-size: 12px; font-weight: 600; margin-top: 10px;margin-bottom: 4px;  font-weight:900;">
                     MD. SAGOR DHALI</h1>
                 </div>
                 <table style="width:100%; font-size: 18px;" class="p-0 m-0 vaccine-info">
@@ -1027,6 +1030,44 @@
     });
 
   </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>
